@@ -1,3 +1,13 @@
+https://github.com/Talibshaib/NAT_Admin_Pannel
+This Link is the GitHub repository of the admin panel for this application, which can be used by the host. This admin panel was developed by team member Md Talib.
+
+youtube.com
+This Link is the demo video showcasing the functionality of this application.
+
+
+
+
+
 GPS Pay – Seamless Payments & Smart Location Services via GPS
 GPS Pay is an innovative Android application that leverages GPS technology to facilitate contactless payments and provide real-time location-based information. Designed for cafes, restaurants, toll booths, and various businesses, it eliminates the need for QR codes, FASTag, or cash, ensuring a swift and hassle-free user experience.​
 
