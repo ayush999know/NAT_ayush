@@ -1,7 +1,7 @@
 https://github.com/Talibshaib/NAT_Admin_Pannel
 This Link is the GitHub repository of the admin panel for this application, which can be used by the host. This admin panel was developed by team member Md Talib.
 
-youtube.com
+(https://youtu.be/2aaXx9oqsM4?si=K0KvGcICUfpcpnMk)
 This Link is the demo video showcasing the functionality of this application.
 
 
