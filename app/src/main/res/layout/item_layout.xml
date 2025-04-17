@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="8dp"
+    app:cardBackgroundColor="@color/card_background"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    app:strokeColor="@color/card_stroke"
+    app:strokeWidth="1dp"
+    android:foreground="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <!-- Item Name -->
+        <TextView
+            android:id="@+id/itemName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Item Name"
+            android:textSize="18sp"
+            android:textColor="@color/text_primary"
+            android:paddingStart="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:maxLines="1"
+            android:ellipsize="end" />
+
+        <!-- Item Price -->
+        <TextView
+            android:id="@+id/itemPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹0.00"
+            android:textSize="18sp"
+            android:textColor="@color/text_secondary"
+            android:paddingEnd="16dp"
+            android:fontFamily="sans-serif-medium" />
+
+        <!-- Subtract (Minus) Icon -->
+        <ImageView
+            android:id="@+id/subtractButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/circular_icon_bg"
+            android:padding="8dp"
+            android:src="@drawable/minus"
+            android:contentDescription="Decrease quantity"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground" />
+
+        <!-- Add (Plus) Icon -->
+        <ImageView
+            android:id="@+id/addButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/circular_icon_bg"
+            android:padding="8dp"
+            android:src="@drawable/add"
+            android:contentDescription="Increase quantity"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

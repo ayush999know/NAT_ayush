@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:background="@color/card_background"
+    android:gravity="center_vertical">
+
+    <!-- Item Name -->
+    <TextView
+        android:id="@+id/itemName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Item Name"
+        android:textSize="18sp"
+        android:textColor="@color/text_primary"
+        android:fontFamily="sans-serif-medium"
+        android:maxLines="1"
+        android:ellipsize="end"/>
+
+    <!-- Item Quantity -->
+    <TextView
+        android:id="@+id/itemQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="x 1"
+        android:textSize="18sp"
+        android:textColor="@color/text_secondary"
+        android:paddingHorizontal="12dp"
+        android:fontFamily="sans-serif"/>
+
+    <!-- Item Price -->
+    <TextView
+        android:id="@+id/itemPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="₹20.00"
+        android:textSize="18sp"
+        android:textColor="@color/primary_dark"
+        android:fontFamily="sans-serif-medium"/>
+</LinearLayout>

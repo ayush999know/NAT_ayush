@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/currentBalanceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Balance:"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/currentBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="₹1700.00"
+        android:textSize="24sp"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_below="@id/currentBalanceLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Add Money Section -->
+    <EditText
+        android:id="@+id/addMoneyInput"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter amount"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/currentBalance"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:id="@+id/addMoneyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Money"
+        android:layout_below="@id/addMoneyInput"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/purple_light"
+        android:textColor="@android:color/white"/>
+
+    <!-- Transaction History -->
+    <TextView
+        android:id="@+id/transactionHistoryLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transaction History:"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/addMoneyButton"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="16dp"/>
+
+    <ListView
+        android:id="@+id/transactionHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/transactionHistoryLabel"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"/>
+
+    <!-- Pay Button -->
+    <Button
+        android:id="@+id/payButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pay Now"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/purple_dark"
+        android:textColor="@android:color/white"/>
+
+</RelativeLayout>

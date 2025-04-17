@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="purple_500">#6200EE</color>
+    <color name="purple_primary">#6200EE</color>
+    <color name="purple_dark">#3700B3</color>
+    <color name="purple_light">#BB86FC</color>
+    <color name="background_gray">#F5F5F5</color>
+    <color name="bottom_nav_active">@color/purple_primary</color>
+    <color name="bottom_nav_inactive">@android:color/darker_gray</color>
+    <color name="primary">#6750A4</color>
+    <color name="onPrimary">#FFFFFF</color>
+    <color name="surface">#FFFBFE</color>
+    <color name="on_surface_variant">#49454F</color>
+    <color name="outline_variant">#CAC4D0</color>
+//hello
+
+    <!-- Primary Colors -->
+    <color name="primaryg">#2E7D32</color> <!-- Forest Green -->
+    <color name="primary_dark">#1B5E20</color> <!-- Deep Green -->
+    <color name="primary_light">#66BB6A</color> <!-- Light Leaf Green -->
+
+    <!-- Accent Colors -->
+    <color name="accent">#AEEA00</color> <!-- Bright Lime Green -->
+    <color name="secondary">#43A047</color> <!-- Vibrant Green -->
+    <color name="highlight">#76FF03</color> <!-- Neon Green (For Hover Effects) -->
+    <color name="alert_red">#D32F2F</color> <!-- Bright Alert Red -->
+
+    <!-- Background & Text Colors -->
+    <color name="background">#E8F5E9</color> <!-- Soft Mint Green -->
+    <color name="card_background">#C8E6C9</color> <!-- Pale Green Tint -->
+    <color name="text_primary">#1B5E20</color> <!-- Deep Green Text -->
+    <color name="text_secondary">#2E7D32</color> <!-- Softer Green Text -->
+    <color name="text_highlight">#00C853</color> <!-- Bright Green for Special Labels -->
+    <color name="text_alert">#C62828</color> <!-- Darker Red for Warnings -->
+
+    <!-- Button Colors -->
+    <color name="button_background">#2E7D32</color> <!-- Forest Green -->
+    <color name="button_hover">#388E3C</color> <!-- Darker Green Hover -->
+    <color name="button_text">#FFFFFF</color> <!-- White -->
+    <color name="button_alert">#D32F2F</color> <!-- Red Button for Warnings -->
+
+    <!-- Input Fields -->
+    <color name="input_background">#A5D6A7</color> <!-- Soft Pastel Green -->
+    <color name="input_border">#2E7D32</color> <!-- Forest Green Borders -->
+
+    <!-- Status Bar & Navigation Bar -->
+    <color name="status_bar">#1B5E20</color> <!-- Deep Green -->
+    <color name="navigation_bar">#2E7D32</color> <!-- Forest Green -->
+
+    <color name="ripple_color">#66A5D6A7</color> <!-- Light green ripple -->
+    <color name="card_stroke">#FFE0E0E0</color>
+</resources>

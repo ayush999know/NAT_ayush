@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/background">
+
+    <!-- Search Bar -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/searchBarLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search items..."
+        app:boxStrokeColor="@color/input_border"
+        app:boxCornerRadiusTopStart="8dp"
+        app:boxCornerRadiusTopEnd="8dp"
+        app:boxCornerRadiusBottomStart="8dp"
+        app:boxCornerRadiusBottomEnd="8dp"
+        app:startIconDrawable="@android:drawable/ic_menu_search"
+        app:startIconTint="@color/text_secondary"
+        android:layout_marginBottom="16dp">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/searchBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_secondary" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Items List Container -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="8dp">
+
+        <LinearLayout
+            android:id="@+id/itemsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <!-- Cart Summary -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/card_background"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/cartSummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cart is empty"
+            android:textSize="16sp"
+            android:padding="16dp"
+            android:textColor="@color/text_primary"
+            android:gravity="center" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Total Price -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/primary"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/totalPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total: \u20B90.00"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="16dp"
+            android:gravity="center"
+            android:textColor="@color/button_text" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Location Status -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/card_background"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <View
+                android:id="@+id/statusCircle"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:background="@drawable/circle_background"
+                android:layout_marginEnd="10dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/statusText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Checking location..."
+                android:textSize="16sp"
+                android:textColor="@color/text_primary" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Checkout Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/checkoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Proceed to Checkout"
+        android:enabled="false"
+        android:textSize="18sp"
+        android:paddingVertical="14dp"
+        android:textColor="@color/button_text"
+        app:backgroundTint="@color/button_background"
+        app:cornerRadius="8dp"
+        app:elevation="6dp"
+        android:layout_marginTop="8dp"
+        app:rippleColor="@color/ripple_color" />
+</LinearLayout>

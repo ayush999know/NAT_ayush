@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/black"
+    android:background="@android:color/white">
+
+    <!-- TextView for the car number at the top left -->
+    <TextView
+        android:id="@+id/carNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MH 01 AB 1234"
+        android:textSize="18sp"
+        android:textColor="@android:color/holo_purple"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Toggle Switch for Auto Pay -->
+    <Switch
+        android:id="@+id/autoPaySwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Auto Pay"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:layout_toEndOf="@id/carNumber"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:checked="false"
+        android:layout_alignParentTop="true"/>
+
+    <!-- Wallet Icon at the top right -->
+    <ImageView
+        android:id="@+id/walletIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/wallet"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:scaleType="centerInside"
+        android:tint="@android:color/white" />
+
+
+
+    <ImageView
+        android:id="@+id/taxReceiptsIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/reciept"
+        android:layout_above="@id/tollMessageBox"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:scaleType="centerInside"/>
+
+    <!-- Rectangular box at the bottom -->
+    <LinearLayout
+        android:id="@+id/tollMessageBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/rectangular_box_background"
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- TextView for toll-related messages -->
+        <TextView
+            android:id="@+id/tollTaxMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No toll detected"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"/>
+    </LinearLayout>
+</RelativeLayout>
